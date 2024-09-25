@@ -238,8 +238,8 @@ public class EmployeeForgetPassword extends JFrame {
 
     public void SendOTP(){
         try{
-            String ACCOUNT_SID = "AC1bf73b3e7fd23f099f5f83dfebab7978";
-            String AUTH_TOKEN = "3b0fe0bcbb00ae7ceeb6b71f91a12435";
+            String ACCOUNT_SID = "";
+            String AUTH_TOKEN = "";
             Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
             String num = text1.getText();
 
@@ -254,6 +254,8 @@ public class EmployeeForgetPassword extends JFrame {
 
         }
     }
+               // "AC1bf73b3e7fd2 3f099f5f83dfebab7978";
+            // "3b0fe0bcbb00ae7ce eb6b71f91a12435";
 
     //    @Override
     public void actionPerformedForget(ActionEvent e) {
